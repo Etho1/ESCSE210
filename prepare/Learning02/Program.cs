@@ -9,6 +9,12 @@ class Program
         job1.Display();
         job2.Display();
 
-        Resume.Jobs.Add(job1);
+        Resume resume1 = new Resume("John");
+
+        resume1._jobs.Add(job1);
+        resume1._jobs.Add(job2);
+
+        resume1.Display();
+
     }
 }
